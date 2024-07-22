@@ -1,9 +1,8 @@
 <script>
   let menuItems = [
     { label: 'Home', link: '/' },
-    { label: 'About', link: '#about' },
-    { label: 'Roles', link: '#roles' },
-    { label: 'Guide', link: '#guide' },
+    { label: 'About', link: '/about' },
+    { label: 'Guide', link: '/guide' },
     { label: 'Team', link: '/team' },
     { label: 'Contact', link: '/contact' }
   ];

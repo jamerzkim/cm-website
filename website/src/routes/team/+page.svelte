@@ -38,18 +38,19 @@
       },
     ];
   </script>
-  
-  <main class="p-6 bg-gray-50 min-h-screen py-16">
-    <h1 class="text-3xl font-semibold text-gray-800 mb-6">Meet Our Team</h1>
-    <ul role="list" class="divide-y divide-slate-300">
-      {#each people as person}
-        <li class="flex py-4 first:pt-0 last:pb-0">
-          <img class="h-14 w-14 rounded-full" src="{person.imageUrl}" alt="{person.name}" />
-          <div class="ml-4 overflow-hidden">
-            <p class="text-lg font-medium text-gray-900">{person.name}</p>
-            <p class="text-sm text-gray-600">{person.email}</p>
-          </div>
-        </li>
-      {/each}
-    </ul>
-  </main>
+  <div class="flex justify-center min-h-screen bg-gray-50 mt-16">
+    <main class="p-6 bg-white shadow rounded-lg w-2/5 h-2/5">
+      <h1 class="text-3xl font-semibold text-gray-800 mb-6">Meet Our Team</h1>
+      <ul role="list" class="divide-y divide-slate-300">
+        {#each people as person}
+          <li class="flex py-4 first:pt-0 last:pb-0">
+            <img class="h-14 w-14 rounded-full" src="{person.imageUrl}" alt="{person.name}" />
+            <div class="ml-4 overflow-hidden">
+              <p class="text-lg font-medium text-gray-900">{person.name}</p>
+              <p class="text-sm text-gray-600">{person.email}</p>
+            </div>
+          </li>
+        {/each}
+      </ul>
+    </main>
+  </div>  
